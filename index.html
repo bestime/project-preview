@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="" updatetime="1651127980646">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+      var createOverlay=function(){function e(e){return-e.offsetWidth/2+"px"}function n(e){return-e.offsetHeight/2+"px"}function t(t,r){function l(){clearTimeout(v),clearTimeout(y),clearTimeout(h),clearTimeout(T)}function s(){L.style["margin-left"]=e(L),L.style["margin-top"]=n(L)}function u(){l(),!f&&p(i),T=setTimeout(function(){!f&&p(o),s(),v=setTimeout(function(){p(c),f=!0,d()},_)},30)}function d(){j>0&&(h=setTimeout(m,j))}function m(){l(),p(o),f=!1,y=setTimeout(function(){p(a)},E)}function p(e){H.className=e+" "+C}r=r||{};var f,v,y,h,T,g=!1!==r.mask,w=r.oFather||document.body,_=Math.max(30,r.showDelay||30),j=r.duration||0,C=r.customClassName,E=500,H=document.createElement("div"),L=document.createElement("div");if(L.className="jy_overlay_main",p(a),g){var M=document.createElement("div");H.appendChild(M),M.className="jy_overlay_bg"}return L.appendChild(t),H.appendChild(L),w.appendChild(H),{show:u,close:m}}var a="jy_overlay_wrapper",i=a+" layout",o=i+" exist",c=o+" active",r="jy-toast-wrapper",l='<div class="jy-loading"><span class="jy-loading__spinner"><svg viewBox="25 25 50 50" class="jy-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>';return t.toast=function(e){var n=document.createElement("div"),a=document.createElement("p");n.className=r,!0===e.loading&&(n.innerHTML=l,n.className+=" ts-loading"),n.appendChild(a);var i=t(n,e);return{show:function(e){e!==a.innerHTML&&(a.innerHTML=e||""),i.show()},close:i.close}},t.loading=function(e){var n=document.createElement("div");n.className="jy-loading-wrapper",n.innerHTML=l;var a=document.createElement("p");n.appendChild(a);var i=t(n,e),o=e.defaultLabel||"";return{show:function(e){e=e||o,e!==a.innerHTML&&(a.innerHTML=e),i.show()},close:i.close}},t}();
+      document.write('  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />  <meta name="format-detection"content="telephone=no, email=no" />  <meta name="wap-font-scale" content="no">  <meta name="renderer" content="webkit">  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="HandheldFriendly" content="true">  <meta name="screen-orientation" content="portrait">  <meta name="x5-orientation" content="portrait">  <meta name="msapplication-tap-highlight" content="no">'),window.Rem=function(e,n,t){function i(){return screen.width>0&&(window.innerWidth>=screen.width||0==window.innerWidth)?screen.width:window.innerWidth}function o(){return screen.height>0&&(window.innerHeight>=screen.height||0==window.innerHeight)?screen.height:window.innerHeight}function a(){function a(){m=c>n?n/(n/100):c<e?e/(n/100):c/(n/100)}function h(){v.dataset.dpr=r,v.style.fontSize=m+"px",t&&t(m)}c=i(),o(),r=window.devicePixelRatio?window.devicePixelRatio:w?c>818?3:c>480?2:1:1,w&&(c=screen.width,screen.height),a(),window.screenWidth_=c,s||l||u||g||p||f?setTimeout(function(){c=i(),o(),getWFsize(),a()},500):h()}var c,r,m,h=null,d=window.navigator.userAgent,w=d.match(/iphone/i),s=d.match(/yixin/i),l=d.match(/Mb2345/i),u=d.match(/mso_app/i),g=d.match(/sogoumobilebrowser/gi),p=d.match(/liebaofast/i),f=d.match(/GNBR/i),v=document.getElementsByTagName("html")[0];window.addEventListener("onorientationchange"in window?"orientationchange":"resize",function(){clearTimeout(h),h=setTimeout(a,60)},!1),a()};
+
+      Rem(340, 750, function (scale, a,b) {
+        scale = scale/100
+        document.getElementsByTagName('html')[0].setAttribute('scale', scale)
+        window._ROOT_SCALE = scale
+      })
+      
+    </script>
+    <style>
+      .jy_overlay_bg,.jy_overlay_wrapper{left:0;top:0;right:0;bottom:0;user-select:none}.jy_overlay_wrapper{position:fixed;z-index:500;visibility:hidden;display:none}.jy_overlay_wrapper.exist{visibility:visible}.jy_overlay_wrapper.layout{display:block}.jy_overlay_bg,.jy_overlay_main{transition:opacity .5s}.jy_overlay_bg{position:absolute;background:rgba(0,0,0,.7);opacity:0}.jy_overlay_main{position:absolute;left:50%;top:50%;z-index:2;opacity:0}.jy_overlay_wrapper.active .jy_overlay_bg{opacity:1}.jy-toast-wrapper{background:rgba(0,0,0,.8);font-size:14px;color:#fff;padding:7px 15px;text-align:center}.jy_overlay_wrapper.active .jy_overlay_main{opacity:1}.jy-loading-wrapper{text-align:center}.jy-loading-wrapper p,.jy-toast-wrapper p{padding:0;margin:10px 0 0 0;font-size:14px;color:#fff}.jy-toast-wrapper p{margin-top:0}.jy-toast-wrapper.ts-loading p{margin-top:10px}.jy-toast-wrapper.ts-loading{padding:20px 30px;border-radius:7px}.jy-loading{position:relative;color:#fff;font-size:0;vertical-align:middle;display:inline-block}.jy-loading__spinner{position:relative;display:inline-block;width:40px;height:40px;max-width:100%;max-height:100%;vertical-align:middle;animation:jy-ld-rotate .8s linear infinite}.jy-loading__circular{display:block;width:100%;height:100%}.jy-loading__circular circle{animation:jy-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}.jy-loading--vertical{display:flex;flex-direction:column;align-items:center}@-moz-keyframes jy-ld-rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}@-webkit-keyframes jy-ld-rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}@-o-keyframes jy-ld-rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes jy-ld-rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}@-moz-keyframes jy-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}100%{stroke-dasharray:90,150;stroke-dashoffset:-120}}@-webkit-keyframes jy-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}100%{stroke-dasharray:90,150;stroke-dashoffset:-120}}@-o-keyframes jy-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}100%{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes jy-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}100%{stroke-dasharray:90,150;stroke-dashoffset:-120}}
+      * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        
+      }
+      html {
+        height: 100%;
+        font-family: PingFang SC,Helvetica Neue,Hiragino Sans GB,Helvetica,Microsoft YaHei,Arial;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      #app {
+        box-shadow: 0 0 0.4rem rgba(0,0,0.5);
+        height: 100%;
+        display: flex;
+        max-width: 7.5rem;
+        margin: 0 auto;
+        flex-direction: column;
+      }
+    </style>
+    
+    <link rel="icon" href="favicon.ico">
+    <script src="static/js/axios.min.js"></script>
+    <script src="static/js/dayjs@1.11.1.min.js"></script>
+    <script src="static/js/echarts@5.3.2.min.js"></script>
+    
+    <title>智慧气象</title>
+  <link href="compile/css/app.d36b28eb.css?70e09f129974d27f" rel="stylesheet"></head>
+  <body>
+    <script>
+      var $ToastLoading = createOverlay.toast({
+        oFather: document.body,
+        showDelay: 30,
+        mask: false,
+        duration: 0,
+        loading: true,
+        customClassName: 'xxxxxxxxxxxx'
+      })
+    </script>
+    <noscript>
+      <strong>We're sorry but miniapp-h5-v1 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  <script defer="defer" src="compile/js/chunk-vendors.734926a1.js?70e09f129974d27f"></script><script defer="defer" src="compile/js/app.5a8c3179.js?70e09f129974d27f"></script></body>
+</html>

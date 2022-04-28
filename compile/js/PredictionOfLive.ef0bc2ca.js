@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkminiapp_h5_v1"]=self["webpackChunkminiapp_h5_v1"]||[]).push([[792],{3720:function(n,r,e){e.r(r),e.d(r,{default:function(){return p}});var u=e(3396);function t(n,r){const e=(0,u.up)("router-view");return(0,u.wg)(),(0,u.j4)(e)}var i=e(89);const a={},c=(0,i.Z)(a,[["render",t]]);var p=c}}]);

@@ -1,0 +1,37 @@
+[
+  {
+    "key": "a",
+    "start": 10,
+    "end": 10,
+    "label": "第一个",
+    "color": "red"
+  },
+  {
+    "key": "b",
+    "start": 20,
+    "end": 35,
+    "label": "第二个",
+    "color": "pink"
+  },
+  {
+    "key": "c",
+    "start": 35,
+    "end": 50,
+    "label": "第三个",
+    "color": "blue"
+  },
+  {
+    "key": "d",
+    "start": 35,
+    "end": 50,
+    "label": "第四个",
+    "color": "#eee"
+  },
+  {
+    "key": "e",
+    "start": 35,
+    "end": 50,
+    "label": "第五个",
+    "color": "#e08a27"
+  }
+]
